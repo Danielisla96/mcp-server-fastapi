@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from tools.shared.models import MultiplicationResult
+from .models import MultiplicationResult
 
 router = APIRouter(prefix="/calculator", tags=["Calculadora"])
 

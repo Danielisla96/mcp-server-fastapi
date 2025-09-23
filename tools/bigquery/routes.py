@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from google.cloud import bigquery
 from google.api_core.exceptions import GoogleAPICallError
-from tools.shared.models import BigQueryRequest, DryRunResult, QueryResult
+from .models import BigQueryRequest, DryRunResult, QueryResult
 
 router = APIRouter(prefix="/bigquery", tags=["BigQuery"])
 

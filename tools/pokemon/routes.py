@@ -1,6 +1,6 @@
 import httpx
 from fastapi import APIRouter, HTTPException
-from tools.shared.models import PokemonInfo
+from .models import PokemonInfo
 
 router = APIRouter(prefix="/pokemon", tags=["Pokémon"])
 
