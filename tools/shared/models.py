@@ -1,1 +1,0 @@
-# Este archivo ahora está vacío - los modelos se han movido a sus respectivas carpetas de herramientas

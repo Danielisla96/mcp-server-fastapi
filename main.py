@@ -25,5 +25,6 @@ mcp.mount_http()
 
 if __name__ == "__main__":
     print("Servidor de herramientas ejecutándose en http://localhost:8000")
+    print("Documentación FastAPI: http://localhost:8000/docs")
     print("El servidor MCP está disponible en http://localhost:8000/mcp")
     uvicorn.run(app, host="0.0.0.0", port=8000)
