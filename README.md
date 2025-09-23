@@ -31,7 +31,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ### Software Requerido
 
-1. **Python 3.8 o superior**
+1. **Python 3.12 o superior**
    ```bash
    python3 --version
    ```
@@ -57,15 +57,18 @@ Antes de comenzar, asegúrate de tener instalado:
 ### Paso 1: Clonar el Repositorio
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Danielisla96/mcp-server-fastapi
 cd mcp-server-fastapi
 ```
 
-### Paso 2: Crear Entorno Virtual
+### Paso 2: Crear Entorno Virtual con Python 3.12
 
 ```bash
-# Crear entorno virtual
-python3 -m venv mcp-fastapi-env
+# Verificar versión de Python 3.12
+python3.12 --version
+
+# Crear entorno virtual con Python 3.12
+python3.12 -m venv mcp-fastapi-env
 
 # Activar entorno virtual
 # En macOS/Linux:
@@ -73,11 +76,17 @@ source mcp-fastapi-env/bin/activate
 
 # En Windows:
 # mcp-fastapi-env\Scripts\activate
+
+# Verificar que Python 3.12 esté activo en el entorno
+python --version
 ```
 
 ### Paso 3: Instalar Dependencias
 
 ```bash
+# Actualizar pip a la última versión
+pip install --upgrade pip
+
 # Instalar todas las dependencias
 pip install -r requirements.txt
 ```
