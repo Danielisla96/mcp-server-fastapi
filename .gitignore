@@ -1,0 +1,4 @@
+.env
+mcp-fastapi-danielisla
+.DS_Store
+*.json
