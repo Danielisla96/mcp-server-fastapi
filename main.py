@@ -16,11 +16,7 @@ app.include_router(calculator_router)
 app.include_router(pokemon_router)
 app.include_router(bigquery_router)
 
-mcp = FastApiMCP(
-    app,
-    name="Servidor MCP FastAPI Personalizado",
-    description="Contiene herramientas de cálculo, Pokémon y para interactuar con Google BigQuery.",
-)
+mcp = FastApiMCP(app)
 mcp.mount_http()
 
 if __name__ == "__main__":
